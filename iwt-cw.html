@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>IWT CW</title>
+	<link rel="stylesheet" href="iwt-cw.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>IWT CW</h1>
+	<form id="query-form">
+		<label for="file">File:</label>
+		<select id="file" name="file">
+			<option value="mens">Men's Results</option>
+			<option value="womens">Women's Results</option>
+		</select><br>
+
+		<label for="year-op">Year:</label>
+		<select id="year-op" name="year-op">
+			<option value="equals">Equals</option>
+			<option value="greater-than">Greater Than</option>
+			<option value="less-than">Less Than</option>
+		</select>
+		<input type="text" style="width:40px" id="year" name="year"><br>
+
+		<label for="tournament">Tournament:</label>
+		<select id="tournament" name="tournament">
+			<option value="Any">Any</option>
+			<option value="Australian Open">Australian Open</option>
+			<option value="French Open">French Open</option>
+			<option value="Wimbledon">Wimbledon</option>
+			<option value="U.S. Open">U.S. Open</option>
+		</select><br>
+
+		<label for="winner">Winner:</label>
+		<input type="text" id="winner" name="winner"><br>
+
+		<label for="runner-up">Runner-up:</label>
+		<input type="text" id="runner-up" name="runner-up"><br>
+
+		<button type="submit" id="send-query">Send Query</button>
+		<button type="reset" id="clear-input">Clear Input</button>
+		<button type="button" id="clear-output">Clear Output</button>
+	</form>
+
+	<table id="results-table">
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Tournament</th>
+				<th>Winner</th>
+				<th>Runner-up</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Results will be inserted here -->
+		</tbody>
+	</table>
+
+	<div id="output"></div>
+    <script src="iwt-cw.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <legend>
+            <form>
+                <label>Year</label>
+                <input id="year"/>
+                <label>Winner</label>
+                <input id="winner"/>
+                <label>Runner-up</label>
+                <input id="runner-up" />
+            </form>
+        </legend>
+        <div id="output">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Tournament</th>
+                    <th>Winner</th>
+                    <th>Runner-up</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022</td>
+                    <td>U.S. Open</td>
+                    <td>Iga Swiatek</td>
+                    <td>Ons Jabeur</td>
+                  </tr>
+                  <tr>
+                    <td>2022</td>
+                    <td>Wimbledon</td>
+                    <td>Elena Rybakina</td>
+                    <td>Ons Jabeur</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> -->
