@@ -1,4 +1,8 @@
-document.getElementById("year-op").value = "=";
+// assign default values
+$("#year-op").val("=");
+$("#year").val(2000);
+$("#tournament").val("Wimbledon");
+
 $(document).ready(function () {
   // Clear all form inputs
   $("#query-form :input").val("");

@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Grand Slam Winners</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="iwt-cw.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grand Slam Winners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="iwt-cw.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Grand Slam Data & Winners</h1>
 
-	<h1>Grand Slam Data & Winners</h1>
-
-	<form id="query-form" method="get" action="iwt-cw.php">
-		<label for="file">Select a file:</label>
-		<select id="file" name="file">
-			<option value="mens-grand-slam-winners.json">Men's Grand Slam Winners</option>
-			<option value="womens-grand-slam-winners.json">Women's Grand Slam Winners</option>
-		</select>
-		<br>
-		<label for="year">Year:</label>
-		<select id="year-op" name="yearOperator">
-			<option value="">Select option</option>
-			<option value="=" selected>Equals</option>
-			<option value="<">Greater Than</option>
-			<option value=">">Less Than</option>
-		</select>
-		<input style="width: 50px;" type="number" id="year" name="year">
-		<br>
-		<label for="tournament">Tournament:</label>
-		<select id="tournament" name="tournament">
-			<option value="">Select Tournament</option>
-			<option value="Any">Any</option>
-			<option value="Australian Open">Australian Open</option>
-			<option value="French Open">French Open</option>
-			<option value="Wimbledon">Wimbledon</option>
-			<option value="U.S. Open">U.S. Open</option>
-		</select>
-		<br>
-		<label for="winner">Winner:</label>
-		<input type="text" id="winner" name="winner">
-		<br>
-		<label for="runner-up">Runner-up:</label>
-		<input type="text" id="runner-up" name="runnerUp">
-		<br>
-		<button class="send-query" type="button" id="send-query">Send Query</button>
-		<button class="clear-input" type="button" id="clear-input">Clear Input</button>
-		<button class="clear-output" type="button" id="clear-output">Clear Output</button>
-	</form>
-	<center>
-
-
-	<table id="results-table">
-		<thead>
-			<tr>
-			<th>Tournament</th>
-			<th>Year</th>
-			<th>Winner</th>
-			<th>Runner-up</th>
-			</tr>
-		</thead>
-		<tbody>
-			<!-- The table rows will be added dynamically -->
-			<div id="output"></div>
-		</tbody>
-	</table>
-</center>
-	<!-- place javascript file just before the body closing for non-blocking purpose -->
-	<script src="iwt-cw.js"></script>
-</body>
+    <form id="query-form" method="get" action="iwt-cw.php">
+      <label for="file">Select a file:</label>
+      <select id="file" name="file">
+        <option value="mens-grand-slam-winners.json">
+          Men's Grand Slam Winners
+        </option>
+        <option value="womens-grand-slam-winners.json">
+          Women's Grand Slam Winners
+        </option>
+      </select>
+      <br />
+      <label for="year">Year:</label>
+      <select id="year-op" name="yearOperator">
+        <option value="">Select option</option>
+        <option value="=" selected>Equals</option>
+        <option value="<">Greater Than</option>
+        <option value=">">Less Than</option>
+      </select>
+      <input style="width: 50px" type="number" id="year" name="year" />
+      <br />
+      <label for="tournament">Tournament:</label>
+      <select id="tournament" name="tournament">
+        <option value="">Select Tournament</option>
+        <option value="Any">Any</option>
+        <option value="Australian Open">Australian Open</option>
+        <option value="French Open">French Open</option>
+        <option value="Wimbledon">Wimbledon</option>
+        <option value="U.S. Open">U.S. Open</option>
+      </select>
+      <br />
+      <label for="winner">Winner:</label>
+      <input type="text" id="winner" name="winner" />
+      <br />
+      <label for="runner-up">Runner-up:</label>
+      <input type="text" id="runner-up" name="runnerUp" />
+      <br />
+      <button class="send-query" type="button" id="send-query">
+        Send Query
+      </button>
+      <button class="clear-input" type="button" id="clear-input">
+        Clear Input
+      </button>
+      <button class="clear-output" type="button" id="clear-output">
+        Clear Output
+      </button>
+    </form>
+    <center>
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Tournament</th>
+            <th>Year</th>
+            <th>Winner</th>
+            <th>Runner-up</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- The table rows will be added dynamically -->
+          <div id="output"></div>
+        </tbody>
+      </table>
+    </center>
+    <!-- place javascript file just before the body closing for non-blocking purpose -->
+    <script src="iwt-cw.js"></script>
+  </body>
 </html>
