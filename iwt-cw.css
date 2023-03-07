@@ -1,6 +1,5 @@
 body{
-  width: 60%;
-  margin: 0 auto;
+  text-align: center;
 }
 form {
     margin: 20px;
@@ -53,3 +52,45 @@ form {
     display: table;
   }
   
+  #send-query,#clear-output, #clear-input {
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .send-query{
+    background-color: #4CAF50;
+  }
+  .clear-output{
+    background-color: #3186ee;
+
+  }
+  .clear-input{
+    background-color: #3186ee;
+
+  }
+
+  /* on Mobile  */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(225, 229, 230);
+
+    }
+    label {
+      margin-top: 10px
+    }
+    select, input[type="number"], input[type="text"] {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 200px;
+    }
+    #send-query,#clear-output, #clear-input {
+      padding: 4px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }

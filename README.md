@@ -5,7 +5,6 @@ https://www.dcs.bbk.ac.uk/~ptw/teaching/IWT/2023/coursework/cw.html
 ## REquirements 
 1. user can choose men or women
 1. user can search by such as players' names or years
-2. user 
 
 
 ## Tech requirement
@@ -38,5 +37,3 @@ send the query (with id attribute having value "send-query"),
 clear the input fields and selections (with id attribute having value "clear-input"),
 clear the table of output (with id attribute having value "clear-output").
 Your HTML file should contain an area where output will be displayed. This should be implemented as follows:
-
-<div id="output"></div>
