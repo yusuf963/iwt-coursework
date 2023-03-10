@@ -37,3 +37,5 @@ send the query (with id attribute having value "send-query"),
 clear the input fields and selections (with id attribute having value "clear-input"),
 clear the table of output (with id attribute having value "clear-output").
 Your HTML file should contain an area where output will be displayed. This should be implemented as follows:
+
+test
